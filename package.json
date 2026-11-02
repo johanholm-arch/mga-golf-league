@@ -3,6 +3,13 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@netlify/blobs": "^8.1.0"
+    "@netlify/blobs": "^11.1.7"
+  },
+  "scripts": {
+    "test": "node --import ./test/loader.mjs --test test/*.test.mjs",
+    "dev": "node --import ./test/loader.mjs scripts/dev.mjs"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
